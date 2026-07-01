@@ -19,7 +19,6 @@ int main(int argc, char *argv[]) {
         for(i = 0; environ[i] != NULL; i++){
             printf("%s\n", environ[i]);
         }
-        return 0;
     } 
 
     for(i = 1; i < argc; i++){
@@ -38,13 +37,11 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    
-
-
 extern char **environ;
 for(j = 0; environ[j] != NULL; j++){
     printf("%s\n", environ[j]);
-}
+    }
+    return 0;
 }
 /* 実行例
 
